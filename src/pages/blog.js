@@ -5,9 +5,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import ReactMarkdown from "react-markdown"
-
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import BlogBox from "../components/blog"
 
 const imgStyle = {
   width: "100%",
@@ -37,9 +35,12 @@ const SecondPage = () => {
 
   return (
     <Layout>
-      <Seo title="Page two" />
-      <h1>Hi from the second page</h1>
-      <p>Welcome to page 2</p>
+      <Seo title="Blog" />
+      <Link to="/">Go back to the homepage</Link>
+      <br /> <br />
+      <h1 style={{ textAlign: "center" }}>Blog</h1>
+      {/* <pre>{JSON.stringify(Data.allStrapiBlogs.nodes, null, 2)}</pre> */}
+      <BlogBox />
     </Layout>
   )
 }
