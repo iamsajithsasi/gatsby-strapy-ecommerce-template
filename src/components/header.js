@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div className="container py-3">
-      <h1 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h3>
     </div>
   </header>
 )

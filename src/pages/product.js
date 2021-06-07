@@ -12,6 +12,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ImageGalleryBox from "../components/imagegallery"
 import { Col, Row } from "react-bootstrap"
 import BlogBox from "../components/blog"
+import ProductGalleryBox from "../components/productGallery"
 
 const imgStyle = {
   width: "100%",
@@ -54,10 +55,11 @@ const ProductPage = () => {
   return (
     <Layout>
       <Seo title="Product Page" />
-      <h1 className="text-center mt-3 mb-4">Product Page</h1>
-      <Row className="product-box">
+      {/* <h1 className="text-center mt-3 mb-4">Product Page</h1> */}
+      <Row className="product-box pt-5">
         <Col sm="12" lg="6">
-          <ImageGalleryBox />
+          {/* <ImageGalleryBox /> */}
+          <ProductGalleryBox />
         </Col>
         <Col sm="12" lg="6">
           <h4>Amazon Brand</h4>
@@ -121,7 +123,7 @@ const ProductPage = () => {
       </Row>
       <br />
       <hr />
-      <h1 className="text-center mt-3 mb-4">Blog</h1>
+      {/* <h1 className="text-center mt-3 mb-4">Blog</h1> */}
       <BlogBox />
     </Layout>
   )
